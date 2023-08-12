@@ -5,6 +5,7 @@ import Departments from './Departments'
 import ProductsList from './ProductsList'
 import Sidebar from './Sidebar'
 import AddProduct from './AddProduct'
+import { Product } from './Product'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/departments" element={<Departments />} ></Route>
         <Route path="/products" element={<ProductsList />} ></Route>
         <Route path="/addProduct" element={<AddProduct />} ></Route>
+        <Route path="/products/:productId" element={<Product />} ></Route>
       </Routes>
     </div>
   )
